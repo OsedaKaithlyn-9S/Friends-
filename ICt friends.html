@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Friends</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .friends-table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        th, td {
+            border: 5px solid black;
+            text-align: center;
+            padding: 15px;
+            overflow-wrap: break-word;
+        }
+
+        th {
+            height: 75px;
+            font-size: 30px;
+        }
+
+        td {
+            height: 165px;
+        }
+
+        .picture-column {
+            width: 30%;
+        }
+
+        .name-column {
+            width: 35%;
+        }
+
+        .birthday-column {
+            width: 35%;
+        }
+
+        .profile-pic {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid black;
+        }
+
+        .friend-name {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .birthday {
+            font-size: 20px;
+        }
+
+        @media (max-width: 500px) {
+            body {
+                padding: 5px;
+            }
+
+            th, td {
+                border-width: 3px;
+                padding: 5px;
+            }
+
+            .profile-pic {
+                width: 65px;
+                height: 65px;
+                border-width: 3px;
+            }
+
+            .friend-name,
+            .birthday {
+                font-size: 14px;
+            }
+
+            th {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <table class="friends-table">
+        <thead>
+            <tr>
+                <th class="picture-column"></th>
+                <th class="name-column">N</th>
+                <th class="birthday-column">B</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    <img
+                        src="https://pin.it/4BJcDzFYn"
+                        alt="Friend 1"
+                        class="profile-pic">
+                </td>
+                <td class="friend-name">Kristine manabat</td>
+                <td class="birthday">August 8</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img
+                        src="https://pin.it/CEPjHIfev"
+                        alt="Friend 2"
+                        class="profile-pic">
+                </td>
+                <td class="friend-name">nayeon Kim</td>
+                <td class="birthday">November 30</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img
+                        src="https://pin.it/2Khsl0fCC"
+                        alt="Friend 3"
+                        class="profile-pic">
+                </td>
+                <td class="friend-name">Chloe Alvarez</td>
+                <td class="birthday">September 7</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
